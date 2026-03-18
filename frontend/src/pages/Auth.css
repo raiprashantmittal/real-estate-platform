@@ -1,0 +1,21 @@
+.auth-page { min-height: calc(100vh - 66px); display: flex; align-items: center; justify-content: center; padding: 40px 24px; }
+.auth-card { width: 100%; max-width: 480px; padding: 40px; }
+.auth-brand { font-family: var(--font-head); font-size: 22px; color: var(--gold); text-align: center; margin-bottom: 24px; font-weight: 700; }
+.auth-title { font-family: var(--font-head); font-size: 28px; color: var(--brown); text-align: center; margin-bottom: 6px; }
+.auth-sub { text-align: center; color: var(--slate); font-size: 14px; margin-bottom: 28px; }
+.auth-btn { width: 100%; justify-content: center; padding: 14px; font-size: 15px; margin-top: 4px; }
+.auth-switch { text-align: center; font-size: 14px; color: var(--slate); margin-top: 20px; }
+.auth-switch a { color: var(--gold); font-weight: 500; }
+.auth-switch a:hover { text-decoration: underline; }
+.role-selector { display: flex; gap: 12px; margin-bottom: 24px; }
+.role-opt {
+  flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px;
+  padding: 16px 12px; border-radius: var(--radius); border: 2px solid var(--cream2);
+  background: var(--white); cursor: pointer; transition: var(--transition); font-family: var(--font-body);
+}
+.role-opt span { font-size: 28px; }
+.role-opt strong { font-size: 14px; color: var(--brown); }
+.role-opt small { font-size: 11px; color: var(--slate); text-align: center; }
+.role-opt:hover { border-color: var(--gold); }
+.role-opt.selected { border-color: var(--gold); background: #FEF3C7; }
+.role-opt.selected strong { color: #92400E; }

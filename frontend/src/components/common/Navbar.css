@@ -1,0 +1,47 @@
+.navbar {
+  background: var(--white);
+  border-bottom: 1px solid var(--cream2);
+  position: sticky; top: 0; z-index: 100;
+  box-shadow: 0 2px 12px rgba(44,24,16,0.06);
+}
+.navbar-inner {
+  max-width: 1200px; margin: 0 auto;
+  padding: 0 24px; height: 66px;
+  display: flex; align-items: center; gap: 24px;
+}
+.navbar-logo {
+  font-family: var(--font-head); font-size: 22px; font-weight: 700;
+  color: var(--brown); display: flex; align-items: center; gap: 8px; white-space: nowrap;
+}
+.logo-icon { font-size: 24px; color: var(--gold); }
+.navbar-links { display: flex; align-items: center; gap: 2px; flex: 1; }
+.nav-link {
+  display: flex; align-items: center; gap: 6px; padding: 8px 12px;
+  border-radius: 8px; font-size: 14px; font-weight: 500; color: var(--slate);
+  transition: var(--transition);
+}
+.nav-link:hover, .nav-link.active { color: var(--brown); background: var(--cream); }
+.nav-gold { color: var(--gold) !important; }
+.nav-gold:hover, .nav-gold.active { background: #FEF3C7 !important; color: #92400E !important; }
+.navbar-right { margin-left: auto; }
+.user-area { display: flex; align-items: center; gap: 8px; }
+.user-chip {
+  display: flex; align-items: center; gap: 8px; padding: 5px 12px 5px 5px;
+  border-radius: 999px; background: var(--cream); transition: var(--transition);
+}
+.user-chip:hover { background: var(--cream2); }
+.user-av {
+  width: 32px; height: 32px; border-radius: 50%; background: var(--gold); color: var(--white);
+  display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; flex-shrink: 0;
+}
+.user-nm { font-size: 14px; font-weight: 500; color: var(--brown); }
+.role-pill { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.5px; }
+.role-buyer  { background: #DBEAFE; color: #1E40AF; }
+.role-seller { background: #FEF3C7; color: #92400E; }
+.role-admin  { background: #F3E8FF; color: #6B21A8; }
+.icon-btn { padding: 8px 10px !important; }
+.auth-btns { display: flex; gap: 8px; }
+@media(max-width: 768px) {
+  .navbar-links { display: none; }
+  .user-nm, .role-pill { display: none; }
+}

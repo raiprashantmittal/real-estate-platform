@@ -1,0 +1,27 @@
+.profile-layout { display: grid; grid-template-columns: 280px 1fr; gap: 24px; align-items: start; }
+.profile-sidebar { display: flex; flex-direction: column; gap: 16px; position: sticky; top: 82px; }
+.profile-av-card { padding: 32px 24px; text-align: center; }
+.profile-av { width: 80px; height: 80px; border-radius: 50%; background: var(--gold); color: var(--white); font-size: 36px; font-weight: 600; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+.profile-name { font-family: var(--font-head); font-size: 20px; color: var(--brown); }
+.profile-email { font-size: 13px; color: var(--slate); margin-top: 4px; }
+.profile-stats { padding: 20px; }
+.ps-item { display: flex; align-items: center; gap: 12px; }
+.ps-item div { flex: 1; }
+.ps-item strong { display: block; font-size: 14px; color: var(--brown); }
+.ps-item span { font-size: 13px; }
+.logout-full { width: 100%; justify-content: center; }
+.profile-main { display: flex; flex-direction: column; gap: 20px; }
+.profile-form-card { padding: 28px; }
+.pf-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.pf-header h3 { font-family: var(--font-head); font-size: 18px; color: var(--brown); }
+.profile-info-list { display: flex; flex-direction: column; gap: 0; }
+.pi-item { display: flex; align-items: center; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--cream2); }
+.pi-item:last-child { border-bottom: none; }
+.pi-item div span { font-size: 11px; font-weight: 600; color: var(--slate); text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 2px; }
+.pi-item div strong { font-size: 15px; color: var(--brown); }
+.quick-links-card { padding: 28px; }
+.quick-links-card h3 { font-family: var(--font-head); font-size: 18px; color: var(--brown); margin-bottom: 16px; }
+.ql-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+.ql-btn { padding: 16px 12px; border-radius: var(--radius); border: 1.5px solid var(--cream2); background: var(--white); font-size: 14px; color: var(--brown); cursor: pointer; transition: var(--transition); font-family: var(--font-body); text-align: left; }
+.ql-btn:hover { border-color: var(--gold); background: #FEF3C7; }
+@media(max-width: 900px) { .profile-layout { grid-template-columns: 1fr; } .profile-sidebar { position: static; } }

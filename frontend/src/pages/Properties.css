@@ -1,0 +1,10 @@
+.props-header { margin-bottom: 28px; }
+.props-layout { display: grid; grid-template-columns: 270px 1fr; gap: 24px; align-items: start; }
+.filters-panel { padding: 20px; position: sticky; top: 82px; }
+.fp-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.clear-btn { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--slate); background: none; border: none; cursor: pointer; font-family: var(--font-body); }
+.clear-btn:hover { color: var(--red); }
+.pagination { display: flex; gap: 8px; justify-content: center; margin-top: 36px; }
+.pg-btn { width: 38px; height: 38px; border-radius: 8px; background: var(--white); border: 1.5px solid var(--cream2); color: var(--brown); font-weight: 500; cursor: pointer; transition: var(--transition); font-family: var(--font-body); }
+.pg-btn.active, .pg-btn:hover { background: var(--brown); color: var(--cream); border-color: var(--brown); }
+@media(max-width:900px) { .props-layout { grid-template-columns: 1fr; } .filters-panel { position: static; } }
